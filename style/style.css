@@ -1,0 +1,120 @@
+/*Font for the entire page*/
+*{
+    font-family: 'Copperplate Gothic Light';
+    line-height: 2.3em;
+    font-size: 1em;
+}
+/*Center the image*/
+.image{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+}
+/*Image Wrapper styling */
+.image-container{
+    float: left;
+    height: 500px;
+    width: 400px;
+    margin: 0px auto;
+}
+/*Show 3D effect on mouse hover*/
+.image-container:hover{
+    box-shadow: 3px 3px 6px #000000;
+}
+/*Display text on image*/
+.text-on-image{
+    display: none;
+    position: absolute;
+    height: 150px;
+    padding: 50px;
+    text-align: center;
+    background-color: #dfb93d;
+    opacity: 0.6;
+    filter: alpha(opacity=20);
+    color: white;
+    font-size: 30px;
+    top: 30%;
+    left: 22%;
+    transform: translate (-50%,50%);
+    text-shadow: 2px 2px 5px black;
+}
+/*Shadow effect on box when hover*/
+.text-on-image:hover{
+    top: 29.9%;
+    left: 21.9%;
+    box-shadow: 5px 5px 4px #000000;
+}
+/*Padding to Button container for space between lines. */
+#btn-container{
+    float: left;
+    clear: left;
+    width: 40%;
+    border: solid red;
+    padding: 40px;
+}
+/*Height , width, styling of prev and next button*/
+#prev, #next{
+    /* float: left; */
+    display: inline-block;
+    width: 30%;
+    height: 50%;
+    border: none;
+    font-weight: 1000;
+    border-radius: 0px;
+    padding: 10px;
+    margin: 9%;
+    background-color: rgb(182, 108, 5);
+}
+/*Show 3D effect on hover*/
+#prev:hover,#next:hover,#buy:hover{
+    box-shadow: 3px 3px 4px #000000;
+}
+/*Fit the information in a fix soze of div - make it readable*/
+#product-detail-container{
+    float: left;
+    padding: 20px;
+    width: 50%;
+    /* margin: 0px auto; */
+}
+/*Make button large*/
+#buy{
+    clear: both;
+    margin: 3em;
+    width: 700px;
+    height: 40px;
+    background-color: rgb(89, 78, 240);
+    border-radius: 0px;
+    border: none;
+    font-weight: 1000;
+}
+/**/
+.details-product{
+    display: none;
+}
+/*Button width 100% and background color*/
+.collapsible {
+    background-color: #f0ad4e;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+}
+/*Put bioplus sign on right */
+#plus-sign{
+    float: right;
+}
+.active, .collapsible:hover {
+    background-color: #F09F2E;
+}
+/*Product information hidden by default*/
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Guitar Center-Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="/style/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div id="main">
+    <!-- Display nav bar on top of the page -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Guitar Center</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Guitars
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">Electric Guitars</a>
+              </li>
+              <li>
+                <a href="#">Electric Guitars</a>
+              </li>
+              <li>
+                <a href="#">Acoustic-Electric Guitars</a>
+              </li>
+              <li>
+                <a href="#">Classic Guitars</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Bass</a>
+          </li>
+          <li>
+            <a href="#">Drums</a>
+          </li>
+          <li>
+            <a href="#">Keyboards</a>
+          </li>
+          <li>
+            <a href="#">Dj & Lighting</a>
+          </li>
+          <li>
+            <a href="#">Used Gear</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- display images of product on Page -->
+    <div class="image-container">
+      <img id="img-product" class="image" src="images/main.jpg" alt="main image">
+    </div>
+    <!-- display text on image -->
+    <div id="text-block" class="text-on-image">
+      Welcome to Modern Guitar Center!
+    </div>
+    
+    <!-- Div container for displaying product information -->
+    <div id="product-detail-container">
+      <div class="product-info-container">
+          <button class="collapsible">Product Info <span id="plus-sign"> &bigoplus;</span></button>
+        <span id="product-info" class="content">From detials product of Price</span>
+      </div>
+      <br>
+      <div class="product-info-details">
+          <button class="collapsible">Price <span id="plus-sign"> &bigoplus;</span></button>
+          <span id="price-info" class="content"> From detials product of Price</span>
+      </div>
+      <br>
+      <div class="shipping-info-container">
+          <button class="collapsible">Shipping Info <span id="plus-sign"> &bigoplus;</span></button>
+          <span id="shipping-info" class="content">From detials product of Price</span>
+      </div>
+      <br>
+      <div class="availability-container">
+          <button class="collapsible">Availability <span id="plus-sign"> &bigoplus;</span></button>
+          <span id="availability-info" class="content">From detials product of Price</span>
+      </div>
+      <br>
+      <div class="">
+          <button class="collapsible">Customer Reviews <span id="plus-sign"> &bigoplus;</span></button>
+          <span id="cust-review" class="content">From detials product of Price</span> <br> <br>
+      </div>
+      <br><br><br>
+      <!-- prev and next button container -->
+      <div class="">
+        <button id="prev" class="btn btn-warning" type="button" >Prev</button>
+        <button id="next" class="btn btn-warning" type="button" >Next</button>
+      </div>
+      <br>
+    </div>
+    <div class="">
+      <center>
+        <button type="button" id="buy" class="btn btn-primary btn-block"> <strong> BUY </strong></button>
+        <br><br><br>
+      </center>
+    </div>
+  </div>
+<script src="app.js"></script>
+</body>
+</html>

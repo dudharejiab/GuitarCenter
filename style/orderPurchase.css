@@ -1,0 +1,98 @@
+/*Font for the entire page*/
+* {
+  font-family: "Copperplate Gothic Light";
+  overflow: auto;
+  line-height: 2.3em;
+  font-size: 1em;
+}
+/*Display text in center*/
+h1 {
+  text-align: center;
+}
+/*Define page width*/
+#page-width {
+  width: 90%;
+  margin: 0px auto;
+}
+/*Define header background and height, font color*/
+#header {
+  background-color: rgb(243, 178, 57);
+  padding: 0px;
+  color: aliceblue;
+  height: 5%;
+}
+/*Define image height and width */
+#purchase-product-image {
+  float: left;
+  display: inline-block;
+  height: 70%;
+  width: 30%;
+  margin: 15px;
+}
+/*Put the description beside image */
+#purchase-product-details {
+  display: inline-block;
+  margin-top: 10%;
+  overflow: hidden;
+}
+h3 {
+  text-align: center;
+}
+/*Position form in center and define height and width*/
+#form {
+  height: 50%;
+  position: relative;
+  width: 70%;
+  margin-left: 10%;
+  margin-top: 10%;
+  clear: left;
+}
+/*Look of the input fields*/
+input[type="text"] {
+  border-radius: 5px;
+  height: 20px;
+  width: 45%;
+  padding: 15px;
+  color: slategray;
+  margin: 5px;
+}
+/*Give padding to state, month and year*/
+select {
+  padding: 10px;
+  margin-left: 10px;
+}
+#cvv {
+  width: 70px;
+}
+/*make the buttons bigger */
+#review,
+#buy {
+  margin: 5em;
+  width: 700px;
+  background-color: #f0ad4e;
+  border-radius: 0px;
+  border: none;
+  font-weight: 1000;
+}
+/*Define Edit button look*/
+#edit {
+  width: 10%;
+  height: 10%;
+  border: none;
+  font-weight: 1000;
+  border-radius: 0px;
+  float: right;
+}
+#review:hover,
+#edit:hover,
+#buy:hover {
+  box-shadow: 3px 3px 4px #000000;
+}
+#buy {
+  display: none;
+}
+#display-purchase-details {
+  display: none;
+  height: 300px;
+  margin: 0px auto;
+}
